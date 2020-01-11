@@ -151,4 +151,10 @@
             Operator_Selector = False
         End If
     End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        If TextBox1.Text.Length > 0 Then
+            TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1, 1)
+        End If
+    End Sub
 End Class
